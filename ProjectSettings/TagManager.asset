@@ -47,3 +47,9 @@ TagManager:
   - name: Player
     uniqueID: 1770176305
     locked: 0
+  - name: GameObject
+    uniqueID: 3837377201
+    locked: 0
+  - name: Wall
+    uniqueID: 926055893
+    locked: 0
