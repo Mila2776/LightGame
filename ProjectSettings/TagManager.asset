@@ -53,3 +53,6 @@ TagManager:
   - name: Wall
     uniqueID: 926055893
     locked: 0
+  - name: Darkness
+    uniqueID: 2876855063
+    locked: 0
