@@ -6,14 +6,23 @@ public class Painting : MonoBehaviour, Interactable.interactable
 {
     public PuzzleManager puzzleManager;
 
-    public bool IsInteracted = false;
+    public int PaintingID;
+
+    private bool IsInteracted = false;
 
     public void Interact()
     {
+        if (IsInteracted) {
 
-      Debug.Log("調查了畫");
+            return;
+        
+        }
 
-      puzzleManager.Painting1Solved = true;
+        IsInteracted = true;
+
+        Debug.Log("調查了第" + PaintingID + "幅畫");
+
+        puzzleManager.PaintingSolved(PaintingID);
 
     }
 

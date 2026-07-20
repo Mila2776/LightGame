@@ -25,8 +25,9 @@ public class PlayerInteraction : MonoBehaviour
                 if (hit.collider != null)
                 {
                     Debug.Log("ÂI¨ì¤F¡G" + hit.collider.name);
+
                     Interactable.interactable interactable =
-                        hit.collider.GetComponent<Interactable.interactable>();
+                    hit.collider.GetComponent<Interactable.interactable>();
 
                     if (interactable != null)
                     {

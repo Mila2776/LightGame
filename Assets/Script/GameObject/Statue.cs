@@ -6,16 +6,25 @@ public class Statue : MonoBehaviour, Interactable.interactable
 {
     public PuzzleManager puzzleManager;
 
+    public int StatueID;
+
     public bool IsInteracted = false;
 
     public void Interact()
     {
-        Debug.Log("調查了雕像");
+        if (IsInteracted)
+        {
 
-        Debug.Log(puzzleManager);
+            return;
 
-        puzzleManager.Statue1Solved = true;
+        }
 
+        IsInteracted = true;
+
+        Debug.Log("調查了第" + StatueID + "個雕像");
+
+
+        puzzleManager.StatueSolved(StatueID);
 
     }
 }
