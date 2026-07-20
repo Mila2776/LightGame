@@ -13,6 +13,8 @@ public class Candle : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            ToggleLight();
+
             if (IsLightOn) {
 
                 Debug.Log("Light On");
@@ -26,7 +28,7 @@ public class Candle : MonoBehaviour
 
             }
 
-            ToggleLight();
+            
         }
     }
 

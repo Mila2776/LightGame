@@ -11,19 +11,15 @@ public class Door : MonoBehaviour
         
         if (Opened)
         {
-            
-            Opened = true;
-
-            Debug.Log("Door Open");
-
-            gameObject.SetActive(false);
-
+            return;
         }
-    
-    
-    
-    
-    
+
+        Opened = true;
+
+        Debug.Log("¶}ªù");
+
+        gameObject.SetActive(false);
+
     }
 
 

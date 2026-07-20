@@ -12,11 +12,16 @@ public class PuzzleManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Painting1Solved) {
+        CheckPuzzle();
+    }
+
+    void CheckPuzzle() {
+
+        if (Painting1Solved && Statue1Solved)
+        {
 
             door1.DoorOpen();
 
         }
-        
     }
 }

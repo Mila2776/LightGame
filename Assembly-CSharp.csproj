@@ -60,11 +60,14 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.15f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\PuzzleManager.cs" />
-    <Compile Include="Assets\Script\Door.cs" />
-    <Compile Include="Assets\Script\Painting.cs" />
+    <Compile Include="Assets\Script\GameObject\Door.cs" />
+    <Compile Include="Assets\Script\GameObject\Painting.cs" />
+    <Compile Include="Assets\Script\GameObject\Statue.cs" />
+    <Compile Include="Assets\Script\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\Script\Player\CameraFollow.cs" />
     <Compile Include="Assets\Script\Player\Candle.cs" />
+    <Compile Include="Assets\Script\GameObject\Interactable.cs" />
+    <Compile Include="Assets\Script\GameObject\PuzzleManager.cs" />
     <Compile Include="Assets\Script\Player\PlayerMove.cs" />
   </ItemGroup>
   <ItemGroup>
