@@ -26,8 +26,7 @@ public class PlayerInteraction : MonoBehaviour
                 {
                     Debug.Log("點到了：" + hit.collider.name);
 
-                    Interactable.interactable interactable =
-                    hit.collider.GetComponent<Interactable.interactable>();
+                    Interactable.interactable interactable = hit.collider.GetComponentInParent<Interactable.interactable>();
 
                     if (interactable != null)
                     {
@@ -40,7 +39,6 @@ public class PlayerInteraction : MonoBehaviour
                 Debug.Log("太黑了，什麼都看不見...");
                 return;
             }
-
 
         }
     }

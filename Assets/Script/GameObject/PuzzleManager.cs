@@ -41,9 +41,9 @@ public class PuzzleManager : MonoBehaviour
                 Statue1Solved = true;
                 break;
 
-            case 2:
-                Debug.Log("第二個雕像已調查");
+            case 2:               
                 Statue2Solved = true;
+                Debug.Log("第二個雕像已調查");
                 break;
 
             default:
@@ -63,6 +63,7 @@ public class PuzzleManager : MonoBehaviour
 
         if (Statue2Solved)
         {
+            Debug.Log("準備開第二扇門");
 
             door2.DoorOpen();
 
