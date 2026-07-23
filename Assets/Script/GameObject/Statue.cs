@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Statue : MonoBehaviour, Interactable.interactable
+public class Statue : MonoBehaviour, Interactable.ObjInteractable
 {
     public PuzzleManager puzzleManager;
 
