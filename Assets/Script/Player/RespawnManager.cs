@@ -25,9 +25,14 @@ public class RespawnManager : MonoBehaviour
     {
         if (CurrentCheckPoint != null)
         {
-
             Player.position = CurrentCheckPoint.position;
 
+            Rigidbody2D rb = Player.GetComponent<Rigidbody2D>();
+
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector2.zero;
+            }
         }
         else {
 

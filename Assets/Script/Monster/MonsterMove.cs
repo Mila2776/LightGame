@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class MonsterMove : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class MonsterMove : MonoBehaviour
 
     public Transform[] PatrolPoints;
     public Transform Player;
+    private Transform Target;
 
     private int CurrentPoint = 0;
 
@@ -23,7 +25,9 @@ public class MonsterMove : MonoBehaviour
     void Start()
     {
         //target = pointB;
-        transform.position = PatrolPoints[0].position;
+        //transform.position = PatrolPoints[0].position;
+        Target = PatrolPoints[CurrentPoint];
+
     }
 
     void Update()
